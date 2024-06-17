@@ -8,13 +8,13 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class CircuitbreakerResilience4jApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CircuitbreakerResilience4jApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CircuitbreakerResilience4jApplication.class, args);
+    }
 
-	@Bean
-	public RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 
 }

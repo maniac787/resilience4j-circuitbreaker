@@ -19,3 +19,23 @@ resilience4j.circuitbreaker:
       waitDurationInOpenState: 5s
       failureRateThreshold: 50
       eventConsumerBufferSize: 10
+
+logging:
+  level:
+    root: info
+server:
+  port: 8080
+
+springdoc:
+  override-with-generic-response: false
+  default-consumes-media-type: "application/json"
+  default-produces-media-type: "application/json"
+  show-actuator: true
+
+  api-docs:
+    enabled: ${USE_API-DOCS:true}
+  swagger-ui:
+    enabled: ${USE_SWAGGER:true}
+    tags-sorter: alpha
+    operations-sorter: method
+    doc-expansion: false
